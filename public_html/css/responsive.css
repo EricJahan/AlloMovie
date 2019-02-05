@@ -1,0 +1,37 @@
+/* 
+    Created on : 4 févr. 2019, 10:12:44
+    Author     : eric
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header header"
+                         "aside list-films"
+                         "footer footer";
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.list-films {
+    grid-area: list-films;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+footer{
+    grid-area: footer;
+}

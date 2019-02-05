@@ -1,0 +1,19 @@
+/* 
+    Created on : 4 févr. 2019, 09:46:30
+    Author     : eric
+*/
+
+.films {
+    background-color: lightcyan;
+}
+
+#sous-titre {
+    color: red;
+}
+#sous-titre:hover {
+    color: pink;
+}
+
+a:hover {
+cursor: crosshair;
+}
